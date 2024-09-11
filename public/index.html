@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>泓財銀行 - WBank</title>
+</head>
+<body>
+    <header>
+        <h1>歡迎來到泓財銀行 (WBank)</h1>
+        <nav>
+            <a href="index.html">首頁</a>
+            <a href="about.html">關於我們</a>
+            <button id="login-button">登入</button>
+        </nav>
+    </header>
 
+    <main>
+        <section>
+            <h2>關於泓財銀行</h2>
+            <p>泓財銀行（WBank）是一家數字銀行，致力於為客戶提供安全、便捷的在線銀行服務。我們利用先進的技術來優化客戶體驗，讓您的金融管理變得更加輕鬆。</p>
+        </section>
+
+        <section>
+            <h2>WCoins（泓幣）</h2>
+            <p>作為泓財銀行的獨特數字貨幣，WCoins（泓幣）為我們的客戶提供更多的金融靈活性。您可以使用泓幣進行以下操作：</p>
+            <ul>
+                <li>在線購物</li>
+                <li>支付帳單</li>
+                <li>轉帳給朋友或家人</li>
+            </ul>
+            <p>加入泓財銀行，開始使用 WCoins（泓幣）享受無縫的數字金融體驗！</p>
+        </section>
+
+        <section>
+            <h2>立即註冊</h2>
+            <p>現在就加入泓財銀行，開啟您的數字銀行之旅！</p>
+            <form action="/submit" method="POST">
+                <input type="text" name="name" placeholder="請輸入您的姓名" required />
+                <button type="submit">註冊</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 -- 2024 泓財銀行所有權</p>
+    </footer>
+
+    <script>
+        // 登入按鈕的動畫效果
+        const loginButton = document.getElementById('login-button');
+        loginButton.addEventListener('mouseenter', () => {
+            loginButton.style.transform = 'scale(1.1)';
+        });
+        loginButton.addEventListener('mouseleave', () => {
+            loginButton.style.transform = 'scale(1)';
+        });
+    </script>
+</body>
+</html>
